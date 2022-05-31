@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Problema 03</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Freckle+Face">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="imgs/icone-fisica.png">
+  </head>
+  <body>
+    <header>
+      <img src="imgs/icone-fisica.png" alt="Ícone de função matemática">
+      <h1>Física</h1></header>
+    <main class="paper">
+      <h2>Simulação Numérica de Problemas de Física</h2>
+      <h3>Problema 03</h3>
+      <p>Qual a temperatura de equilibrio térmico (TE) de quando se mistura uma massa “M1” Kg de água (Calor especifico de 1,00cal/g°C) à temperatura de “T1” °C com outra massa “M2” K g de água a uma
+        temperatura de “T2” °C.</p>
+      <p>Coloque os valores de <span class="fisica">M1</span>,
+        <span class="fisica">M2</span>, <span class="fisica">T1</span> e <span class="fisica">T2</span>
+        abaixo e clique no botão "Resolver!"</p>
+      <section id="coeficientes-calculo">
+        <div class="centraliza">
+        (<label for="coeficiente-M1" class="fisica">M1: </label>
+        <input id="coeficiente-M1" type="number" value="1">
+        ×
+        <label for="coeficiente-T1" class="fisica">T1: </label>
+        <input id="coeficiente-T1" max="100" min="0" type="number" value="1">)
+        +
+        (<label for="coeficiente-M2" class="fisica">M2: </label>
+        <input id="coeficiente-M2" type="number" value="1">
+        ×
+        <label for="coeficiente-T2" class="fisica">T2: </label>
+        <input id="coeficiente-T2" max="100" min="0" type="number" value="1">) </div>
+
+        <div id="linha-horizontal"></div>
+
+        <div class="centraliza">
+        (<label for="coeficiente-M1-1" class="fisica">M1: </label>
+        <input id="coeficiente-M1-1" type="number" disabled>
+        +
+        <label for="coeficiente-M2-2" class="fisica">M2: </label>
+        <input id="coeficiente-M2-2" type="number" disabled>) </div>
+        <button id="botaoresolver">Resolver!</button>
+      </section>
+      <section id="resultado">
+        O resultado é:
+        <ul>
+          <li>
+            <span class="fisica">TE</span>: <input id="resultado-TE" type="number" disabled>
+            <span class="fisica">°C</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
